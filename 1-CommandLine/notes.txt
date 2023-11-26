@@ -1,0 +1,11 @@
+ran the following line of code in the commandline
+
+g++ -Wall -std=c++14 helloworld.cpp
+
+
+if you dont specify a build file name it should output a.out
+
+use : ./a.out to run
+
+
+
