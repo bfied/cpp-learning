@@ -18,6 +18,8 @@ int main() {
     // If you don't seed the generator you will get the same requence random numbers every run
     
     cout << "RAND_MAX on my system is: " << RAND_MAX << endl;
+    auto sys_time = time(nullptr);
+    cout << "system time: " << sys_time << endl;
     srand(time(nullptr));  
     
     for (size_t i{1}; i<=count; ++i)  {

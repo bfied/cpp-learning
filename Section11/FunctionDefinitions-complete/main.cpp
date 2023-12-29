@@ -2,6 +2,8 @@
 // Function Definitions
 // Area of Circle and Volume of a Cylinder
 #include <iostream>
+#include <cmath>
+
 
 using namespace std;
 
@@ -16,11 +18,17 @@ double calc_volume_cylinder(double radius, double height) {
     return calc_area_circle(radius) * height;
 }
 
+double calc_volume_sphere(double radius){
+    return 4.0 / 3.0 * pi * pow(radius,3) ;
+}
+
 void area_circle() {
     double radius{};
     cout << "\nEnter the radius of the circle: ";
     cin >> radius;
     cout << "The area of a circle with radius " << radius << " is " << calc_area_circle(radius) << endl;
+    cout << "The volume of a sphere with radius " << radius << " is " << calc_volume_sphere(radius) << endl; 
+
 }
 
 void volume_cylinder() {
@@ -39,6 +47,7 @@ int main() {
     area_circle();
     area_circle();
     volume_cylinder();
+    
     
     return 0;
 }
